@@ -47,17 +47,24 @@ body {
 
 
 .container img {
+    background: linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
     max-width: 100%;
     height: auto;
     border-radius: 1.2em;
     box-shadow: 2em 2em 2em 2em;
-
-    
 }
 
-.container h1 {
-        color: var(--clr-gray100);   
+
+.container header {
+        font-size: 5rem;
+        color: white;   
         position: absolute;  
         left: 10%;                       
-        top: 30%;
+        top: 40%;
+}
+.container h1 {
+        color: white;   
+        position: absolute;  
+        left: 10%;                       
+        top: 50%;
 }
