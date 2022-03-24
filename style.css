@@ -61,11 +61,3 @@ body {
         left: 10%;                       
         top: 30%;
 }
-
-.container h2 {
-    color: var(--clr-gray100);   
-        position: absolute;  
-        left: 10%;                       
-        top: 40%;
-    
-}
