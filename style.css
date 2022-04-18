@@ -21,7 +21,7 @@ body {
     border-radius: 0.2rem;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -39,32 +39,33 @@ body {
     border-bottom-width: thin;
     border-bottom-style: solid;
 }
-
-.nav-item:first-child {
-    margin-right: auto;
-    margin-left: 2em;
+.home {
+    display: flex;
+    justify-content: center;
+}
+.home-list {
+    list-style: none;
 }
 
-
-.container img {
-    background: linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
-    max-width: 100%;
-    height: auto;
-    border-radius: 1.2em;
-    box-shadow: 2em 2em 2em 2em;
+.education {
+    display: flex;
+    justify-content: center;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    list-style:none;
+}
+.icons a{
+    color:black;
+    padding-right: 2em;
+}
 
-.container header {
-        font-size: 5rem;
-        color: white;   
-        position: absolute;  
-        left: 10%;                       
-        top: 40%;
+.projects {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+
 }
-.container h1 {
-        color: white;   
-        position: absolute;  
-        left: 10%;                       
-        top: 50%;
-}
+
