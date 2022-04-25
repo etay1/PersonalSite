@@ -29,6 +29,10 @@ body {
     align-items: center;
 }
 
+header h1 {
+    align-items: center;
+}
+
 .nav-item{
     margin-right: 2rem;
 }
