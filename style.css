@@ -29,10 +29,6 @@ body {
     align-items: center;
 }
 
-header h1 {
-    align-items: center;
-}
-
 .nav-item{
     margin-right: 2rem;
 }
@@ -47,33 +43,21 @@ header h1 {
     border-bottom-width: thin;
     border-bottom-style: solid;
 }
-.home {
-    display: flex;
-    justify-content: center;
-}
-.home-list {
-    list-style: none;
-}
-
-.education {
-    display: flex;
-    justify-content: center;
-}
 
 .icons {
     display: flex;
     justify-content: center;
     list-style:none;
+    padding: 1rem 0;
 }
 .icons a{
     color:black;
     padding-right: 2em;
 }
 
-.projects {
-    display:flex;
-    justify-content: center;
-    align-items: flex-start;
-
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
-
