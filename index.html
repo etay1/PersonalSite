@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+    </script> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +13,7 @@
     <title>Personal Portfolio</title>
 </head>
 <body>
+  
 
     <!--Navbar-->
     <div class = "navbar">
@@ -28,7 +32,7 @@
 
     <!--Showcase-->
     <section class="showcase">
-        
+    
         <div class = "container grid"> <!--grid item 1-->
             <div class="showcase-text">
                 <h1>Hi, I'm Elijah <br> <h2>CS Student
@@ -65,10 +69,7 @@
         <div class="container"> <h3 class ="stats-heading.text-center my-1">
                 I am currently seeking an internship for the summer of 2023.
             </h3>
-           
-
-
-            <div class="grid grid-3 text-center my-4">
+            <div class="grid grid-3 text-center my-2">
                 <div>
                     <i class="fas fa-upload fa-3x"></i>
                     <h3>1</h3>
@@ -91,7 +92,7 @@
     
 
     <!-- Education -->
-    <section class = "cloud bg-primary my-2 py-2">
+    <section class = "education bg-primary my-2 py-2">
         <div class = "container grid">
             <div>
                 <h2 class ="lg" id="edu">Education</h2>
@@ -130,21 +131,24 @@
         <div class="container flex">
             <div class="card">
                 <h4>Java</h4>
-                <img src="images/logos/java.jpg" alt="java" width="82px" height="80px">
+                <i class="fa-brands fa-java fa-7x"></i>
+                <!--<img src="images/logos/java.jpg" alt="java" width="82px" height="80px">-->
             </div>
             <div class="card">
                 <h4>HTML5</h4>
-                <img src="images/logos/html.png" alt="html" width="82px" height="80px">
+                <i class="fa-brands fa-html5 fa-7x"></i>
+                <!--<img src="images/logos/html.png" alt="html" width="82px" height="80px">-->
             </div>
             <div class="card">
                 <h4>CSS</h4>
-                <img src="images/logos/css.png" alt="css" width="82px" height="80px">
+                <i class="fa-brands fa-css3-alt fa-7x"></i>
+               <!--<img src="images/logos/css.png" alt="css" width="82px" height="80px">-->
             </div>
         </div>
     </section>
 
 <!-- About me -->
-<section class = "cloud bg-primary py-2">
+<section class = "education bg-primary py-2">
     <div class = "container grid">
         <div>
             <h2 class ="lg" id="about">About me</h2>
@@ -160,7 +164,18 @@
 </section>
 
 
-
+  <!--Loader-->
+    <div class = "loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner">
+            </span>
+         </span>
+    </div>
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
     <!--Footer-->
     <footer class="footer bg-dark py-5">

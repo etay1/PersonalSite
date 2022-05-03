@@ -76,6 +76,9 @@ img {
     color: white;
     position: relative;
 }
+.showcase-text{
+    padding-left: 20px;
+}
 
 .showcase p {
     margin: 20px 0;
@@ -90,6 +93,7 @@ img {
     grid-template-columns: 55% 45%;
     gap: 30px;
 }
+
 .showcase-form {
     position: relative;
     top: 60px;
@@ -99,6 +103,7 @@ img {
     z-index: 100;
     justify-self: flex end;
 }
+
 .showcase-form .form-control {
     margin: 30px 0;
 }
@@ -111,7 +116,7 @@ img {
     padding: 3px;
     font-size: 16px;
 }
-
+ 
 .showcase-form input:focus {
     outline: none;
 }
@@ -125,11 +130,10 @@ img {
     right: 0;
     left: 0;
     background:#fff;
-    transform: skewY(-3deg);
-    -webkit-transform: skewY(-3deg);
-    -moz-transform: skewY(-3deg);
-    -ms-transform: skewY(-3deg);
-
+    transform: skewY(-1.5deg);
+    -webkit-transform: skewY(-1.5deg);
+    -moz-transform: skewY(-1.5deg);
+    -ms-transform: skewY(-1.5deg);
 }
 
 /* Stats */ 
@@ -150,7 +154,7 @@ img {
     font-weight: bold;
 }
 
-/*CLI*/
+/*CLI not used anymore but figured could be useful in the future*/
 .cli .grid {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -162,7 +166,7 @@ img {
 }
 
 /*Education*/
-.cloud .grid {
+.education .grid {
     grid-template-columns: 4fr 3fr;
 }
 
@@ -189,3 +193,74 @@ img {
 .footer .social a{
     margin: 0 10px;
 }
+
+/*Loader*/
+.loader-wrapper{
+    padding-bottom: 60px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid var(--primary-color);
+    animation: loader 4s infinite ease;    
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color:#fff;
+    animation: loader-inner 4s infinite ease-in;
+}
+@keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+  }
