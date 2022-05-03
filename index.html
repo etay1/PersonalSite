@@ -1,66 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<link rel = "stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/4710e08636.js" crossorigin="anonymous"></script>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PersonalSite</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "css/utilities.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <title>Loruki | Cloud Hosting for Everyone</title>
 </head>
-
 <body>
 
-<navbar>
-     <ul class = "nav-list">
-         <li class = "nav-item">
-             <a href ="#">Resume</a></li>
-         <li class = "nav-item">
-             <a href ="#proj">Projects</a><l>
-         <li class = "nav-item">
-             <a href ="#edu">Education</a> </li>
-         <li class = "nav-item">
-             <a href ="https://docs.google.com/forms/d/e/1FAIpQLSc62NOZsUTQxYCgV1QzeDAdjc4S1WXWNSaZ128zdwuLjHkUMg/viewform?usp=sf_link">Contact</a> </li>    
-     </ul>
+    <!--Navbar-->
+    <div class = "navbar">
+        <div class ="container flex">
+            <h1 class="logo">Elijah Tay.</h1> <!--nav item0-->
+            <nav>
+                <ul> 
+                    <li><a href="#top">Home</a></li> <!--nav item1-->
+                    <li><a href="#">Resume</a></li> <!--nav item2-->
+                    <li><a href="#edu">Education</a></li> <!--nav item3-->
+                </ul>
+            </nav>
 
-     <div class = "icons">
-        <li class = "icon-item">
-            <a href="https://github.com/etay1"><i class="fa-brands fa-github fa-2x"></i></a>
-         </li>
-         <li class = "icon-item">
-            <a href="https://www.linkedin.com/in/elijah-tay-46a679135/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-         </li>
+        </div>
     </div>
-</navbar>
 
-<div class = "container">
-    <ul>
-        <!--Home tab-->
-       <h2>Hi, I'm Elijah Tay <br> CS student / Aspiring Software Developer</h2>
-        <p> I'm currently attending SUNY Brockport where
-             I'm set to graduate fall of 2023. 
-             I'm currently looking for internships for the summer of 2023.</p>
-        <!--Education tab-->
-        <a name = "edu"></a>
-        <h3>Education</h3>
-        <li>Bellport High School, Brookhaven, NY </li>
-        <p>Graduted in 2016</p>
-        <li>Suffolk County Community College, Long Island, NY</li>
-        <p>AA in Liberal Arts</p>
-        <li>SUNY Brockport, Brockport, NY</li>
-        <p>I am currently pursuing a BS in Computer Science with a concentration in 
-            Software Development and a double minor in Mathematics and English</p> 
-        <!--Project tab-->
-        <a name = "proj"></a>
-        <h3>Projects</h3>
-        <li>First Project</li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <li>Second Project</li>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo invec!</p>
-    </ul>
-</div>
-</container>
+    <!--Showcase-->
+    <section class="showcase">
+        
+        <div class = "container grid"> <!--grid item 1-->
+            <div class="showcase-text">
+                <h1>Hi, I'm Elijah <br> <h2>CS Student
+                <br> Software Developer
+                </h2></h1>
+                <p></p>
+                <a href="#" class="btn btn-outline">More about me</a>
+            </div>
+
+            <div class="showcase-form card"> <!--grid item 2-->
+                <h2>Let's get in touch</h2>
+                <form>
+                    <div class ="form-control">
+                        <input type="text" name="name" placeholder = "Name" required>
+                    </div>
+                    <div class ="form-control">
+                        <input type="text" name="email" placeholder = "Email">
+                    </div>
+                    <div class ="form-control">
+                        <input type="text" name="company" placeholder = "Company Name">
+                    </div>
+                    
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h3 class ="stats-heading.text-center my-1">
+                I am currently seeking an internship for the summer of 2023.
+            </h3>
+
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>3</h3>
+                    <p class="text-secondary">Semesters till graduation</p>
+                </div>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>1</h3>
+                    <p class="text-secondary">Published Site</p>
+                </div>
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>2</h3>
+                    <p class="text-secondary">On-going Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Education -->
+    <section class = "cloud bg-primary my-2 py-2">
+        <div class = "container grid">
+            <div class ="text-center">
+                <h2 class ="lg" id="edu">Education</h2>
+                
+                
+                <ul class>
+                    <h2 class ="md"> SUNY Brockport (2021-2023)</h2>
+                   
+                    <li>
+                        B.S. Computer Science
+                    </li>
+                    <li>
+                        Concentration: Software Development
+                    </li>
+                    <li>
+                        Minor: Mathematics, English
+                    </li>
+                </ul>
+
+                <ul class>
+                    <h2 class ="md"> SUNY Suffolk (2017-2020)</h2>
+                    <li>A.A. Liberal Arts</li>
+                </ul>
+
+
+                
+                    
+            </div>
+            <img src="images/cloud.png" alt="cloud">
+
+        </div>
+    </section>
+    
+    <!--Languages-->
+    <section class="languages">
+        <h2 class="md text-center my-2">
+            Programming Languages
+        </h2>
+        <div class="container flex">
+            <div class="card">
+                <h4>Java</h4>
+                <img src="images/logos/java.jpg" alt="java" width="82px" height="80px">
+            </div>
+            <div class="card">
+                <h4>HTML5</h4>
+                <img src="images/logos/html.png" alt="html" width="82px" height="80px">
+            </div>
+            <div class="card">
+                <h4>CSS</h4>
+                <img src="images/logos/css.png" alt="css" width="82px" height="80px">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class ="container grid grid-3">
+            <div>
+                <h1>Loruki</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#edu">Education</a></li>
+                </ul>
+            </nav>
+
+            <div class ="social">
+                <a href = "#"><i class="fab fa-github fa-2x"></i></a>
+                <a href = "#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            
+        </div>
+    </footer>
 
 </body>
 </html>
