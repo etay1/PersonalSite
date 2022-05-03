@@ -1,2 +1,2 @@
 # PersonalSite
-https://etay1.github.io/PersonalSite/
+https://etay1.github.io/personalsite/
