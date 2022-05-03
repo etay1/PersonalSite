@@ -1,2 +1,2 @@
 # PersonalSite
-etay1.github.io/
+etay1.github.io
