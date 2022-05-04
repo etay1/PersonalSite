@@ -51,14 +51,14 @@ border: 1px #fff solid;
     color: #fff;
 }
 
-/*grabbing all the a links from buttons (in dark areas)*/
+/*grabbing all the a links from buttons (in dark areas) made a few just in case for the future*/
 .bg-primary a, .btn-primary a,
 .bg-secondary a, .btn-secondary a,
 .bg-dark a, .btn-dark a {
     color:#fff
 }
 
-/*Text sizes*/
+/*Text sizes and adjustments*/
 .lead {
     font-size: 20px;
 }
@@ -75,8 +75,6 @@ border: 1px #fff solid;
     font-size: 2rem;
 }
 
-
-
 .lg {
     font-size: 3rem;
 }
@@ -85,11 +83,11 @@ border: 1px #fff solid;
     font-size: 4rem;
 }
 
-
 .text-center{
     text-align: center;
 }
 
+/*Flexes*/
 .flex {
     display:flex;
     justify-content: space-between;
@@ -97,6 +95,7 @@ border: 1px #fff solid;
     height: 100%;
 }
 
+/*Grids*/
 .grid {
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -107,7 +106,6 @@ border: 1px #fff solid;
     align-items: center;
     height: 100%;
 }
-
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
 }

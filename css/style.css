@@ -14,6 +14,7 @@
     /*border: 1px solid red;*/
 
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -47,13 +48,13 @@ p {
 img {
     width: 100%
 }
+
 /*Navbar*/
 .navbar {
     background-color: var(--primary-color);
     color: #fff;
     height: 70px;
 }
-
 .navbar ul {
     display:flex;
 }
@@ -69,6 +70,7 @@ img {
 .navbar .flex {
     justify-content: space-between;
 }
+
 /* Showcase*/
 .showcase {
     height: 400px;
@@ -79,21 +81,17 @@ img {
 .showcase-text{
     padding-left: 20px;
 }
-
 .showcase p {
     margin: 20px 0;
 }
-
 .showcase h1 {
     font-size: 40px;
 }
-
 .showcase .grid {
     overflow: visible;
     grid-template-columns: 55% 45%;
     gap: 30px;
 }
-
 .showcase-form {
     position: relative;
     top: 60px;
@@ -103,11 +101,9 @@ img {
     z-index: 100;
     justify-self: flex end;
 }
-
 .showcase-form .form-control {
     margin: 30px 0;
 }
-
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
     border: 0;
@@ -116,11 +112,9 @@ img {
     padding: 3px;
     font-size: 16px;
 }
- 
 .showcase-form input:focus {
     outline: none;
 }
-
 .showcase::before,
 .showcase::after {
     content: '';
@@ -143,29 +137,16 @@ img {
 .stats i {
     color:var(--dark-color);
 }
-
 .stats-heading{
     max-width: 500px;
     margin: auto;
 }
-
 .stats .grid h3 {
     font-size: 35px;
 }
 .stats .grid p {
     font-size: 20px;
     font-weight: bold;
-}
-
-/*CLI not used anymore but figured could be useful in the future*/
-.cli .grid {
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-}
-.cli .grid > *:first-child {
-    /*targets cli png and shapes it to be 2 rows and 2 columns*/
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
 }
 
 /*Education*/
@@ -255,7 +236,6 @@ img {
       transform: rotate(360deg);
     }
   }
-  
   @keyframes loader-inner {
     0% {
       height: 0%;
@@ -277,3 +257,47 @@ img {
       height: 0%;
     }
   }
+
+/*Tablets*/
+@media(max-width:768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .education .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+   
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    
+}
+
+/*Mobile*/
+@media(max-width:500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, .1)
+    }
+}
