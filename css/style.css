@@ -326,6 +326,11 @@ img {
         margin: auto;
         animation:slideFromBottom 1s ease-in;
     }
+
+    .stats {
+        animation: none;
+    }
+
 }
 
 /*Mobile*/
