@@ -300,11 +300,6 @@ img {
     }
   }
 
-
-
-
-
-
 /*Tablets*/
 @media(max-width:768px) {
     .grid,
@@ -323,14 +318,14 @@ img {
     .showcase-text {
         text-align: center;
         margin-top: 40px;
+        animation: slideFromTop 1s ease-in;
     }
 
     .showcase-form {
         justify-self: center;
         margin: auto;
+        animation:slideFromBottom 1s ease-in;
     }
-
-    
 }
 
 /*Mobile*/
