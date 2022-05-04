@@ -170,7 +170,7 @@ img {
 
 /*Education*/
 .education .grid {
-    grid-template-columns: 4fr 3fr;
+    grid-template-columns: 4fr 2fr;
 }
 
 /*Languages*/
@@ -213,6 +213,7 @@ img {
     align-items: center;
 }
 .loader {
+    
     display: inline-block;
     width: 30px;
     height: 30px;
