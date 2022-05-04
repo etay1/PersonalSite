@@ -80,6 +80,7 @@ img {
 }
 .showcase-text{
     padding-left: 20px;
+    animation: slideFromLeft 1s ease-in;
 }
 .showcase p {
     margin: 20px 0;
@@ -100,6 +101,7 @@ img {
     padding: 40px;
     z-index: 100;
     justify-self: flex end;
+    animation: slideFromRight 1s ease-in;
 }
 .showcase-form .form-control {
     margin: 30px 0;
@@ -133,6 +135,7 @@ img {
 /* Stats */ 
 .stats {
     padding-top: 100px;
+    animation: slideFromBottom 1s ease-in;
 }
 .stats i {
     color:var(--dark-color);
@@ -185,6 +188,45 @@ img {
 /* Footer */
 .footer .social a{
     margin: 0 10px;
+}
+
+
+
+/*Animations by using key frames (translate x / translate y) think axis*/
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideFromTop {
+    0% {
+        transform:translateY(-100%);
+    }
+    100% {
+        transform:translateY(0%);
+    }
+}
+
+@keyframes slideFromBottom {
+    0% {
+        transform:translateY(100%);
+    }
+    100% {
+        transform:translateY(0%);
+    }
 }
 
 /*Loader*/
@@ -257,6 +299,11 @@ img {
       height: 0%;
     }
   }
+
+
+
+
+
 
 /*Tablets*/
 @media(max-width:768px) {
