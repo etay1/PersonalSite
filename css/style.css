@@ -247,7 +247,7 @@ img {
     width: 30px;
     height: 30px;
     position: relative;
-    border: 4px solid var(--primary-color);
+    border: 4px solid var(--dark-color);
     animation: loader 4s infinite ease;    
 }
 .loader-inner {
