@@ -140,6 +140,9 @@ img {
 .stats {
     padding-top: 100px;
 }
+.stats i {
+    color:var(--dark-color);
+}
 
 .stats-heading{
     max-width: 500px;
@@ -181,6 +184,8 @@ img {
     margin: 18px 10px 40px;
     transition: 0.2s ease-in;
     padding: 2rem;
+    color:var(--dark-color);
+
 }
 .languages .card h4 {
     font-size: 20px;
