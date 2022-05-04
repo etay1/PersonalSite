@@ -195,6 +195,12 @@ img {
     transform: translateY(-15px);
 }
 
+/*Resume*/
+.container-resume {
+ height: 1000px;
+ width: 100%;
+}
+
 /* Footer */
 .footer .social a{
     margin: 0 10px;
