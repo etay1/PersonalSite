@@ -1,9 +1,10 @@
 .container {
     max-width: 1100px;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: auto;
     padding: 0 20px;
 }
+
 .card {
     background-color: #fff;
     color: #333;
@@ -12,18 +13,19 @@
 }
 
 .btn {
-   display: inline-block; /*google this*/
-   padding: 10px 30px;
-   cursor: pointer;
-   background-color: var(--primary-color);
-   color: #fff;
-   border: none;
-   border-radius: 5px;
+    display: inline-block;
+    /*google this*/
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
- 
+
 .btn-outline {
-background-color: transparent;
-border: 1px #fff solid;
+    background-color: transparent;
+    border: 1px #fff solid;
 }
 
 .btn:hover {
@@ -31,31 +33,38 @@ border: 1px #fff solid;
 }
 
 /*Backgrounds and colored buttons*/
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
     background-color: var(--primary-color);
     color: #fff;
 }
 
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
     background-color: var(--secondary-color);
     color: #fff;
 }
 
-.bg-light, .btn-light {
+.bg-light,
+.btn-light {
     background-color: var(--light-color);
     color: #333;
 }
 
-.bg-dark, .btn-dark {
+.bg-dark,
+.btn-dark {
     background-color: var(--dark-color);
     color: #fff;
 }
 
 /*grabbing all the a links from buttons (in dark areas) made a few just in case for the future*/
-.bg-primary a, .btn-primary a,
-.bg-secondary a, .btn-secondary a,
-.bg-dark a, .btn-dark a {
-    color:#fff
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff
 }
 
 /*Text sizes and adjustments*/
@@ -83,13 +92,13 @@ border: 1px #fff solid;
     font-size: 4rem;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 /*Flexes*/
 .flex {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -97,8 +106,8 @@ border: 1px #fff solid;
 
 /*Grids*/
 .grid {
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     /*repeat(2,1fr); = 1fr 1fr;*/
     gap: 20px;
     /*gap is used for padding inbetween grid elements*/
@@ -106,6 +115,7 @@ border: 1px #fff solid;
     align-items: center;
     height: 100%;
 }
+
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -115,38 +125,47 @@ border: 1px #fff solid;
     margin: 1rem 0;
 
 }
+
 .my-2 {
     margin: 1.5rem 0;
-    
+
 }
+
 .my-3 {
     margin: 2rem 0;
-    
+
 }
+
 .my-4 {
     margin: 3rem 0;
-    
+
 }
+
 .my-5 {
-    margin: 4rem 0; 
+    margin: 4rem 0;
 }
+
 .m-1 {
     margin: 1rem;
 }
+
 .m-2 {
     margin: 1.5rem;
-    
+
 }
+
 .m-3 {
     margin: 2rem;
-    
+
 }
+
 .m-4 {
     margin: 3rem;
-    
+
 }
+
 .m-5 {
-    margin: 4rem; 
+    margin: 4rem;
 }
 
 /*Padding*/
@@ -154,37 +173,46 @@ border: 1px #fff solid;
     padding: 1rem 0;
 
 }
+
 .py-2 {
     padding: 1.5rem 0;
-    
+
 }
+
 .py-3 {
     padding: 2rem 0;
-    
+
 }
+
 .py-4 {
     padding: 3rem 0;
-    
+
 }
+
 .py-5 {
-    padding: 4rem 0; 
+    padding: 4rem 0;
 }
+
 .p-1 {
     padding: 1rem;
 
 }
+
 .p-2 {
     padding: 1.5rem;
-    
+
 }
+
 .p-3 {
     padding: 2rem;
-    
+
 }
+
 .p-4 {
     padding: 3rem;
-    
+
 }
+
 .p-5 {
-    padding: 4rem; 
+    padding: 4rem;
 }

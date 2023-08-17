@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
-    </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel = "stylesheet" href = "css/utilities.css">
-    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
+
 <body>
 
     <!--Navbar-->
-    <nav class = "navbar">
-        <div class ="container flex">
+    <nav class="navbar">
+        <div class="container flex">
             <h1 class="logo">Elijah Tay.</h1> <!--nav item0-->
             <nav>
-                <ul> 
+                <ul>
                     <li><a href="index.html">Home</a></li> <!--nav item1-->
                     <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li> <!--nav item2-->
                     <li><a href="#edu">Education</a></li> <!--nav item3-->
@@ -31,31 +34,28 @@
 
     <!--Showcase-->
     <section class="showcase">
-        <div class = "container grid"> <!--grid item 1-->
+        <div class="container grid"> <!--grid item 1-->
             <div class="showcase-text">
-                <h2 class ="lg">
-                    Hi, I'm Elijah</h2> 
-                <h2>CS Student <br> 
+                <h2 class="lg">
+                    Hi, I'm Elijah</h2>
+                <h2>CS Student <br>
                     Full Stack Software Engineer Intern </h2>
                 <a href="#about" class="btn btn-outline">More about me</a>
             </div>
 
             <div class="showcase-form card"> <!--grid item 2-->
                 <h2>Let's get in touch</h2>
-                <form
-                action="https://formspree.io/f/mjvlplez"
-                method="POST"
-                >
-                    <div class ="form-control">
-                        <input type="text" name="name" placeholder = "Name" required>
+                <form action="https://formspree.io/f/mjvlplez" method="POST">
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
                     </div>
-                    <div class ="form-control">
-                        <input type="text" name="email" placeholder = "Email">
+                    <div class="form-control">
+                        <input type="text" name="email" placeholder="Email">
                     </div>
-                    <div class ="form-control">
-                        <input type="text" name="message" placeholder = "Message">
+                    <div class="form-control">
+                        <input type="text" name="message" placeholder="Message">
                     </div>
-                    
+
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
             </div>
@@ -64,20 +64,20 @@
 
     <!-- Stats -->
     <section class="stats">
-        <div class="container py-4"> 
-            <h3 class = "text-center">
+        <div class="container py-4">
+            <h3 class="text-center">
                 I am currently seeking entry level developer positions for 2024.
             </h3>
         </div>
     </section>
 
     <!-- Education -->
-    <section class = "hero bg-primary my-2 py-2">
-        <div class = "container grid">
+    <section class="hero bg-primary my-2 py-2">
+        <div class="container grid">
             <div>
-                <h2 class ="lg" id="edu">Education</h2>
-                <h2 class ="mdsm"> SUNY Brockport (2021-2023)</h2>  
-            <ul class = "education-text">
+                <h2 class="lg" id="edu">Education</h2>
+                <h2 class="mdsm"> SUNY Brockport (2021-2023)</h2>
+                <ul class="education-text">
                     <li>
                         B.S. Computer Science
                     </li>
@@ -85,16 +85,16 @@
                         Concentration: Software Development
                     </li>
                 </ul>
-                <h2 class ="mdsm"> SUNY Suffolk (2017-2020)</h2>
-                <ul class = "education-text">    
+                <h2 class="mdsm"> SUNY Suffolk (2017-2020)</h2>
+                <ul class="education-text">
                     <li>A.A. Liberal Arts</li>
-                </ul>                
+                </ul>
             </div>
             <img src="images/cloud.png" alt="cloud">
 
         </div>
     </section>
-    
+
     <!--Languages-->
     <section class="languages">
         <h2 class="md text-center my-2">
@@ -119,40 +119,45 @@
             <div class="card">
                 <h4>CSS</h4>
                 <i class="fa-brands fa-css3-alt fa-7x"></i>
-               <!--<img src="images/logos/css.png" alt="css" width="82px" height="80px">-->
+                <!--<img src="images/logos/css.png" alt="css" width="82px" height="80px">-->
             </div>
         </div>
     </section>
 
-<!-- About me -->
-<section class = "hero bg-primary py-2">
-    <div class = "container grid">
-        <div>
-            <h2 class ="lg" id="about">About me</h2>
-            <p class ="mdsm">Hello, I'm Elijah. I was born and raised on Long Island, NY. I am finishing my bachelor's in computer science this winter, December 2023. 
-                I am currently working as a Full Stack Software Engineer Intern at Odoo in Buffalo, NY. Outside of work and school, I enjoy playing video games, 
-                riding my motorcyle and watching an abundance of movies and tv shows. I am also a huge fan of The Walking Dead and Life is Strange</p>
+    <!-- About me -->
+    <section class="hero bg-primary py-2">
+        <div class="container grid">
+            <div>
+                <h2 class="lg" id="about">About me</h2>
+                <p class="mdsm">Hello, I'm Elijah. I was born and raised on Long Island, NY. I am finishing my
+                    bachelor's in computer science this winter, December 2023.
+                    I am currently working as a Full Stack Software Engineer Intern at Odoo in Buffalo, NY. Outside of
+                    work and school, I enjoy playing video games,
+                    riding my motorcyle and watching an abundance of movies and tv shows. I am also a huge fan of The
+                    Walking Dead and Life is Strange</p>
+            </div>
+            <div class="circular-portrait">
+                <img src="images/portrait.png" class="container-portrait-img" alt="portrait">
+            </div>
         </div>
-        <img src="images/server.png" alt="server">
-    </div>
-</section>
+    </section>
 
-  <!--Loader-->
-    <div class = "loader-wrapper">
+    <!--Loader-->
+    <div class="loader-wrapper">
         <span class="loader">
             <span class="loader-inner">
             </span>
-         </span>
+        </span>
     </div>
     <script>
-        $(window).on("load", function(){
+        $(window).on("load", function () {
             $(".loader-wrapper").fadeOut("slow");
         });
     </script>
 
     <!--Footer-->
     <footer class="footer bg-dark py-5">
-        <div class ="container grid grid-3">
+        <div class="container grid grid-3">
             <div>
                 <h1>Elijah Chong Tay.</h1>
                 <p>Copyright &copy; 2022</p>
@@ -164,11 +169,12 @@
                     <li><a href="images/resume_tay.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 </ul>
             </nav>
-            <div class ="social">
-                <a href = "https://github.com/etay1"><i class="fab fa-github fa-2x"></i></a>
-                <a href = "https://www.linkedin.com/in/elijah-tay-46a679135/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <div class="social">
+                <a href="https://github.com/etay1"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/elijah-tay-46a679135/"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
