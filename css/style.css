@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 :root {
-    --primary-color:#047aed;
-    --secondary-color:#1c3fa8;
-    --dark-color:#002240;
-    --light-color:#f4f4f4;
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 
@@ -11,7 +12,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /*border: 1px solid red;*/
+    /* border: 1px solid red; */
 
 }
 
@@ -26,10 +27,10 @@ body {
 }
 
 ul {
-list-style: none;
+    list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #333;
 }
@@ -55,18 +56,21 @@ img {
     color: #fff;
     height: 70px;
 }
+
 .navbar ul {
-    display:flex;
+    display: flex;
 }
+
 .navbar a {
     color: white;
     padding: 10px;
     margin: 0 5px;
 }
+
 .navbar a:hover {
     border-bottom: 2px #fff solid;
 }
- 
+
 .navbar .flex {
     justify-content: space-between;
 }
@@ -78,21 +82,26 @@ img {
     color: white;
     position: relative;
 }
-.showcase-text{
+
+.showcase-text {
     padding-left: 20px;
     animation: slideFromLeft 1s ease-in;
 }
+
 .showcase p {
     margin: 20px 0;
 }
+
 .showcase h1 {
     font-size: 40px;
 }
+
 .showcase .grid {
     overflow: visible;
     grid-template-columns: 55% 45%;
     gap: 30px;
 }
+
 .showcase-form {
     position: relative;
     top: 60px;
@@ -103,9 +112,11 @@ img {
     justify-self: flex end;
     animation: slideFromRight 1s ease-in;
 }
+
 .showcase-form .form-control {
     margin: 30px 0;
 }
+
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
     border: 0;
@@ -114,9 +125,11 @@ img {
     padding: 3px;
     font-size: 16px;
 }
+
 .showcase-form input:focus {
     outline: none;
 }
+
 .showcase::before,
 .showcase::after {
     content: '';
@@ -125,28 +138,32 @@ img {
     bottom: -70px;
     right: 0;
     left: 0;
-    background:#fff;
+    background: #fff;
     transform: skewY(-1.5deg);
     -webkit-transform: skewY(-1.5deg);
     -moz-transform: skewY(-1.5deg);
     -ms-transform: skewY(-1.5deg);
 }
 
-/* Stats */ 
+/* Stats */
 .stats {
     padding-top: 100px;
     animation: slideFromBottom 1s ease-in;
 }
+
 .stats i {
-    color:var(--dark-color);
+    color: var(--dark-color);
 }
-.stats-heading{
+
+.stats-heading {
     max-width: 500px;
     margin: auto;
 }
+
 .stats .grid h3 {
     font-size: 35px;
 }
+
 .stats .grid p {
     font-size: 20px;
     font-weight: bold;
@@ -163,29 +180,37 @@ img {
     display: flex;
     justify-content: center;
 }
+
 .languages .card {
     text-align: center;
     margin: 18px 10px 40px;
     transition: 0.2s ease-in;
     padding: 2rem;
-    color:var(--dark-color);
+    color: var(--dark-color);
 
 }
+
 .languages .card h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .languages .card:hover {
     transform: translateY(-15px);
 }
 
 /*Portrait*/
 .circular-portrait {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .circular-portrait-img {
     width: 100%;
@@ -194,12 +219,12 @@ img {
 
 /*Resume*/
 .container-resume {
- height: 1000px;
- width: 100%;
+    height: 1000px;
+    width: 100%;
 }
 
 /* Footer */
-.footer .social a{
+.footer .social a {
     margin: 0 10px;
 }
 
@@ -210,6 +235,7 @@ img {
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0%);
     }
@@ -219,6 +245,7 @@ img {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0%);
     }
@@ -226,24 +253,26 @@ img {
 
 @keyframes slideFromTop {
     0% {
-        transform:translateY(-100%);
+        transform: translateY(-100%);
     }
+
     100% {
-        transform:translateY(0%);
+        transform: translateY(0%);
     }
 }
 
 @keyframes slideFromBottom {
     0% {
-        transform:translateY(100%);
+        transform: translateY(100%);
     }
+
     100% {
-        transform:translateY(0%);
+        transform: translateY(0%);
     }
 }
 
 /*Loader*/
-.loader-wrapper{
+.loader-wrapper {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -254,67 +283,72 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 .loader {
-    
+
     display: inline-block;
     width: 30px;
     height: 30px;
     position: relative;
     border: 4px solid var(--dark-color);
-    animation: loader 4s infinite ease;    
+    animation: loader 4s infinite ease;
 }
+
 .loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color:#fff;
+    background-color: #fff;
     animation: loader-inner 4s infinite ease-in;
 }
+
 @keyframes loader {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    
+
     25% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-    
+
     50% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-    
+
     75% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-    
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @keyframes loader-inner {
+}
+
+@keyframes loader-inner {
     0% {
-      height: 0%;
+        height: 0%;
     }
-    
+
     25% {
-      height: 0%;
+        height: 0%;
     }
-    
+
     50% {
-      height: 100%;
+        height: 100%;
     }
-    
+
     75% {
-      height: 100%;
+        height: 100%;
     }
-    
+
     100% {
-      height: 0%;
+        height: 0%;
     }
-  }
+}
 
 /*Tablets*/
 @media(max-width:768px) {
+
     .grid,
     .showcase .grid,
     .stats .grid,
@@ -323,7 +357,7 @@ img {
         grid-template-rows: 1fr;
         text-align: center;
     }
-   
+
     .showcase {
         height: auto;
     }
@@ -337,7 +371,7 @@ img {
     .showcase-form {
         justify-self: center;
         margin: auto;
-        animation:slideFromBottom 1s ease-in;
+        animation: slideFromBottom 1s ease-in;
     }
 
     .stats {
