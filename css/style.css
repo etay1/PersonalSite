@@ -52,13 +52,18 @@ img {
 
 /*Navbar*/
 .navbar {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary-color);
     color: #fff;
+    padding-top: 1rem;
     height: 70px;
 }
 
 .navbar ul {
     display: flex;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .1)
 }
 
 .navbar a {
@@ -386,12 +391,8 @@ img {
         height: 110px;
     }
 
-    .navbar .flex {
+    .flex {
         flex-direction: column;
     }
 
-    .navbar ul {
-        padding: 10px;
-        background-color: rgba(0, 0, 0, .1)
-    }
 }
