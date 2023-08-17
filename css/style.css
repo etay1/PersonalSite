@@ -224,7 +224,8 @@ img {
 
 /*Projects*/
 .project{
-
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 /*Resume*/
