@@ -179,6 +179,19 @@ img {
     transform: translateY(-15px);
 }
 
+/*Portrait*/
+.circular-portrait {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular-portrait-img {
+    width: 100%;
+    justify-self: center;
+}
+
 /*Resume*/
 .container-resume {
  height: 1000px;
