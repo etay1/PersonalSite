@@ -14,7 +14,6 @@
 
 .btn {
     display: inline-block;
-    /*google this*/
     padding: 10px 30px;
     cursor: pointer;
     background-color: var(--primary-color);
@@ -32,7 +31,6 @@
     transform: scale(.97);
 }
 
-/*Backgrounds and colored buttons*/
 .bg-primary,
 .btn-primary {
     background-color: var(--primary-color);
@@ -57,7 +55,6 @@
     color: #fff;
 }
 
-/*grabbing all the a links from buttons (in dark areas) made a few just in case for the future*/
 .bg-primary a,
 .btn-primary a,
 .bg-secondary a,
@@ -67,9 +64,12 @@
     color: #fff
 }
 
-/*Text sizes and adjustments*/
 .lead {
     font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .sm {
@@ -82,6 +82,10 @@
 
 .md {
     font-size: 2rem;
+}
+
+.mdlg {
+    font-size: 2.5rem;
 }
 
 .lg {
@@ -104,7 +108,6 @@
     height: 100%;
 }
 
-/*Grids*/
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -191,6 +194,14 @@
 
 .py-5 {
     padding: 4rem 0;
+}
+
+.py-6 {
+    padding: 5rem 0;
+}
+
+.py-7 {
+    padding: 6rem 0;
 }
 
 .p-1 {

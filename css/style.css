@@ -12,8 +12,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
-
+    border: 1px
 }
 
 html {
@@ -44,6 +43,22 @@ h2 {
 
 p {
     margin: 10px 0;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+.light-color {
+    color: var(--light-color);
 }
 
 img {
@@ -216,7 +231,6 @@ img {
     justify-content: center;
 }
 
-
 .circular-portrait-img {
     width: 100%;
     justify-self: center;
@@ -232,8 +246,6 @@ img {
 .footer .social a {
     margin: 0 10px;
 }
-
-
 
 /*Animations by using key frames (translate x / translate y) think axis*/
 @keyframes slideFromLeft {
@@ -351,6 +363,25 @@ img {
     }
 }
 
+/*Projects*/
+.project {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+}
+.project h2:first-child {
+    padding-bottom: .5rem;
+}
+
 /*Tablets*/
 @media(max-width:768px) {
 
@@ -394,5 +425,14 @@ img {
     .flex {
         flex-direction: column;
     }
+
+    .project-card {
+        text-align: center;
+    }
+
+    .project-card p {
+        font-size: 1.5rem;
+    }
+
 
 }
