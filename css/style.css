@@ -46,6 +46,22 @@ p {
     margin: 10px 0;
 }
 
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+.light-color {
+    color: var(--light-color);
+}
+
 img {
     width: 100%
 }
@@ -216,14 +232,13 @@ img {
     justify-content: center;
 }
 
-
 .circular-portrait-img {
     width: 100%;
     justify-self: center;
 }
 
 /*Projects*/
-.project{
+.project {
     background-color: var(--primary-color);
     color: #fff;
 }
@@ -238,8 +253,6 @@ img {
 .footer .social a {
     margin: 0 10px;
 }
-
-
 
 /*Animations by using key frames (translate x / translate y) think axis*/
 @keyframes slideFromLeft {
@@ -280,6 +293,25 @@ img {
     100% {
         transform: translateY(0%);
     }
+}
+
+/*Projects*/
+.project {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+    margin: 1rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 /*Loader*/
@@ -400,5 +432,4 @@ img {
     .flex {
         flex-direction: column;
     }
-
 }
