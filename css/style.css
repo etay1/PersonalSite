@@ -378,6 +378,11 @@ img {
     padding: 2rem;
     margin: 1rem;
 }
+
+.project-card p {
+    text-align: left;
+}
+
 .project h2:first-child {
     padding-bottom: .5rem;
 }
