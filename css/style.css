@@ -236,14 +236,6 @@ img {
     justify-self: center;
 }
 
-/*Projects*/
-.project {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding-top: 1px; 
-    padding-bottom: 1px;
-}
-
 /*Resume*/
 .container-resume {
     height: 1000px;
@@ -300,19 +292,17 @@ img {
 .project {
     background-color: var(--primary-color);
     color: #fff;
+    padding-top: 1px; 
+    padding-bottom: 1px;
 }
 
 .project-card {
     background-color: white;
     border-radius: 8px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     transition: transform 0.3s ease-in-out;
     margin: 1rem;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
 }
 
 /*Loader*/
