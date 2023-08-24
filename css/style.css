@@ -171,19 +171,6 @@ img {
     animation: slideFromBottom 1s ease-in;
 }
 
-.stats i {
-    color: var(--dark-color);
-}
-
-.stats-heading {
-    max-width: 500px;
-    margin: auto;
-}
-
-.stats .grid h3 {
-    font-size: 35px;
-}
-
 .stats .grid p {
     font-size: 20px;
     font-weight: bold;
@@ -194,30 +181,8 @@ img {
     grid-template-columns: 4fr 2fr;
 }
 
-/*Languages*/
-.languages .flex {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-}
+/* Technical Skills */
 
-.languages .card {
-    text-align: center;
-    margin: 18px 10px 40px;
-    transition: 0.2s ease-in;
-    padding: 2rem;
-    color: var(--dark-color);
-
-}
-
-.languages .card h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.languages .card:hover {
-    transform: translateY(-15px);
-}
 
 /*Portrait*/
 .circular-portrait {
