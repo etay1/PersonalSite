@@ -116,10 +116,6 @@ img {
     font-size: 40px;
 }
 
-.showcase h2 {
-    color: var(--primary-color);
-}
-
 .showcase .grid {
     overflow: visible;
     grid-template-columns: 55% 45%;
@@ -202,7 +198,7 @@ img {
     padding: 2rem;
     margin: 1rem;
     padding: 1rem;
-    height: 150px;
+    height: fit-content;
     width: 250px;
 }
 
@@ -374,10 +370,6 @@ li {
     text-align: left;
 }
 
-.project-card i {
-    color: var(--primary-color);
-}
-
 .project h2:first-child {
     padding-bottom: .5rem;
 }
@@ -432,10 +424,7 @@ li {
 
     .project-card p {
         font-size: 1.5rem;
-        text-align: center;
     }
 
-    .skill-card {
-        height: fit-content;
-    }
+
 }
