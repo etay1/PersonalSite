@@ -370,10 +370,6 @@ li {
     text-align: left;
 }
 
-.project-card i {
-    color: var(--primary-color);
-}
-
 .project h2:first-child {
     padding-bottom: .5rem;
 }
@@ -408,6 +404,18 @@ li {
 
     .stats {
         animation: none;
+    }
+
+    .project-card {
+        text-align: center;
+    }
+    .project-card h2 {
+        text-align: center;
+    }
+
+    .project-card p {
+        font-size: 1.5rem;
+        text-align: center;
     }
 
 }
