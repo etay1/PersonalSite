@@ -188,6 +188,9 @@ img {
 .hero .grid {
     grid-template-columns: 4fr 2fr;
 }
+.education-text li{
+    color: var(--light-color);
+}
 
 /* Technical Skills */
 .skill-card {
