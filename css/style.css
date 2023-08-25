@@ -171,6 +171,10 @@ img {
     animation: slideFromBottom 1s ease-in;
 }
 
+.stats h2 {
+    color: var(--primary-color);
+}
+
 .stats .grid p {
     font-size: 20px;
     font-weight: bold;
