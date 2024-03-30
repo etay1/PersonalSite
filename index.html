@@ -1,190 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!--Navbar-->
     <nav class="navbar">
-        <div class="container flex">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li> <!--nav item1-->
-                    <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li> <!--nav item2-->
-                    <li><a href="projects.html">Projects</a></li> <!--nav item4-->
-                </ul>
-            </nav>
-
-        </div>
+      <div class="container flex">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!--nav item1-->
+            <li>
+              <a href="resume.pdf" target="_blank" rel="noopener noreferrer"
+                >Resume</a
+              >
+            </li>
+            <!--nav item2-->
+            <li><a href="projects.html">Projects</a></li>
+            <!--nav item4-->
+          </ul>
+        </nav>
+      </div>
     </nav>
 
     <!--Showcase-->
     <section class="showcase">
-        <div class="container grid"> <!--grid item 1-->
-            <div class="showcase-text">
-                <h2 class="lg">
-                    Hi, I'm Elijah</h2>
-                <h2>CS Student <br>
-                    Full Stack Software Engineer Intern </h2>
-                <a href="#about" class="btn btn-outline">More about me</a>
-            </div>
-
-            <div class="showcase-form card"> <!--grid item 2-->
-                <h2>Let's get in touch</h2>
-                <form action="https://formspree.io/f/mjvlplez" method="POST">
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="email" placeholder="Email">
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="message" placeholder="Message">
-                    </div>
-
-                    <input type="submit" value="Send" class="btn btn-primary">
-                </form>
-            </div>
+      <div class="container grid">
+        <!--grid item 1-->
+        <div class="showcase-text">
+          <h2 class="lg">Hi, I'm Elijah</h2>
+          <h2>
+            CS Student <br />
+            Software Engineer at
+            <a href="https://www.odoo.com" class="link">odoo.com</a>
+          </h2>
+          <a href="#about" class="btn btn-outline">More about me</a>
         </div>
+
+        <div class="showcase-form card">
+          <!--grid item 2-->
+          <h2>Let's get in touch</h2>
+          <form action="https://formspree.io/f/mjvlplez" method="POST">
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-control">
+              <input type="text" name="email" placeholder="Email" />
+            </div>
+            <div class="form-control">
+              <input type="text" name="message" placeholder="Message" />
+            </div>
+
+            <input type="submit" value="Send" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Stats -->
     <section class="stats">
-        <div class="container py-4">
-            <h2 class="text-center">
-                I am currently seeking entry level developer positions for 2024.
-            </h2>
-        </div>
+      <div class="container py-4">
+        <h2 class="text-center">
+          I am currently working at Odoo as a Full Stack Engineer
+        </h2>
+      </div>
     </section>
 
     <!-- Education -->
     <section class="hero bg-primary my-2 py-2">
-        <div class="container grid">
-            <div class="education-text">
-                <h2 class="lg" id="edu">Education</h2>
-                <h2 class="mdsm"> SUNY Brockport (2021-2023)</h2>
-                <ul>
-                    <li>
-                        B.S. Computer Science
-                    </li>
-                    <li>
-                        Concentration: Software Development
-                    </li>
-                </ul>
-                <h2 class="mdsm"> SUNY Suffolk (2017-2020)</h2>
-                <ul>
-                    <li>A.A. Liberal Arts</li>
-                </ul>
-            </div>
-            <img src="images/cloud.png" alt="cloud">
+      <div class="container grid">
+        <div class="education-text">
+          <h2 class="lg" id="edu">Education</h2>
+          <h2 class="mdsm">SUNY Brockport (2021-2023)</h2>
+          <ul>
+            <li>B.S. Computer Science</li>
+            <li>Concentration: Software Development</li>
+          </ul>
+          <h2 class="mdsm">SUNY Suffolk (2017-2020)</h2>
+          <ul>
+            <li>A.A. Liberal Arts</li>
+          </ul>
         </div>
+        <img src="images/cloud.png" alt="cloud" />
+      </div>
     </section>
 
-
-
     <section class="skill">
-        <div class="container flex-column" >
-            <h2 class="mdlg text-center my-2">Technical Skills</h2>
-            <div class="container flex grid grid-3 text-center py-2">
-                <div class="skill-card">
-                    <h2 class="mdsm">Languages</h2>
-                    <div class="flex">
-                        <ul class="flex-column">
-                            <li>Python</li>
-                            <li>HTML/CSS</li>
-                            <li>SwiftUI</li>
-                        </ul>
-                        <ul class="flex-column">
-                            <li>Java</li>
-                            <li>Javascript</li>
-                            <li>C</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="skill-card card">
-                    <h2 class="mdsm">Databases</h2>
-                    <ul>
-                        <li>SQL</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h2 class="mdsm">Version Control</h2>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
+      <div class="container flex-column">
+        <h2 class="mdlg text-center my-2">Technical Skills</h2>
+        <div class="container flex grid grid-3 text-center py-2">
+          <div class="skill-card">
+            <h2 class="mdsm">Languages / Tech</h2>
+            <div class="flex">
+              <ul class="flex-column">
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>SwiftUI</li>
+              </ul>
+              <ul class="flex-column">
+                <li>Java</li>
+                <li>Javascript</li>
+                <li>C</li>
+              </ul>
             </div>
+          </div>
+          <div class="skill-card card">
+            <h2 class="mdsm">Databases</h2>
+            <ul>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h2 class="mdsm">Version Control</h2>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
         </div>
- 
+      </div>
     </section>
 
     <!-- About me -->
     <section class="hero bg-primary py-2">
-        <div class="container grid">
-            <div>
-                <h2 class="lg" id="about">About me</h2>
-                <p class="mdsm">Hello, I'm Elijah. I was born and raised on Long Island, NY. I am finishing my
-                    bachelor's in computer science this winter, December 2023.
-                    I am currently working as a Full Stack Software Engineer Intern at Odoo in Buffalo, NY. Outside of
-                    work and school, I enjoy playing video games,
-                    riding my motorcyle and watching an abundance of movies and tv shows. I am also a huge fan of The
-                    Walking Dead and Life is Strange</p>
-            </div>
-            <div class="circular-portrait">
-                <img src="images/portrait.png" class="container-portrait-img" alt="portrait">
-            </div>
+      <div class="container grid">
+        <div>
+          <h2 class="lg" id="about">About me</h2>
+          <p class="mdsm">
+            Hello, I'm Elijah. I was born and raised on Long Island, NY. I am
+            currently a Full Stack Engineer living in Buffalo, NY, working at
+            Odoo, where I'm engaged in maintaining software in a global
+            pipeline. My journey with Odoo began during an internship in the
+            summer of 2023, where I developed a Sales Commission application
+            within the Odoo framework. I graduated from SUNY Brockport with a
+            bachelor's in Computer Science and a concentration in Software
+            Development. In my free time, I enjoy riding my motorcycle, watching
+            an abundance of movies and TV shows with my cats. I am also a huge
+            fan of The Walking Dead and Life is Strange.
+          </p>
         </div>
+        <div class="circular-portrait">
+          <img
+            src="images/portrait.png"
+            class="container-portrait-img"
+            alt="portrait"
+          />
+        </div>
+      </div>
     </section>
 
     <!--Loader-->
     <div class="loader-wrapper">
-        <span class="loader">
-            <span class="loader-inner">
-            </span>
-        </span>
+      <span class="loader">
+        <span class="loader-inner"> </span>
+      </span>
     </div>
     <script>
-        $(window).on("load", function () {
-            $(".loader-wrapper").fadeOut("slow");
-        });
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
     </script>
 
     <!--Footer-->
     <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Elijah Chong Tay.</h1>
-                <p>Copyright &copy; 2022</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#edu">Education</a></li>
-                    <li><a href="images/resume_tay.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="https://github.com/etay1"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/elijah-tay-46a679135/"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
+      <div class="container grid grid-3">
+        <div>
+          <h1>Elijah Chong Tay.</h1>
+          <p>Copyright &copy; 2022</p>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li>
+              <a
+                href="images/resume_tay.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="https://github.com/etay1"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/elijah-tay-46a679135/"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
